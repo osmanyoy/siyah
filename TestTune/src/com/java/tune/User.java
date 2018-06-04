@@ -1,9 +1,16 @@
 package com.java.tune;
 
+import java.util.UUID;
+
 public class User {
 	private String name;
 	private String surname;
 	private int age;
+	
+	public String myMethod() {
+		return UUID.randomUUID().toString();
+	}
+	
 	public String getName() {
 		return name;
 	}

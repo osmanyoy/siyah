@@ -1,0 +1,5 @@
+-XX:CompileThreshold=100 -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:InitialTenuringThreshold=8 -XX:MaxTenuringThreshold=8 -Xms1024M -Xmx1024M -XX:NewSize=256M -XX:MaxNewSize=256M -XX:SurvivorRatio=6 -Xloggc:gc.log -XX:PrintCMSStatistics=2 -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:+PrintHeapAtGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=20M -XX:+PrintGCDateStamps -XX:+PrintCodeCacheOnCompilation -XX:+PrintCompilation
+
+
+-Xmx1024M -Xms1024M -XX:NewSize=720M -XX:MaxNewSize=720M
+
