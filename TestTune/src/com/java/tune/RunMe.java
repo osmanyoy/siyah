@@ -15,11 +15,11 @@ public class RunMe {
 			user.setAge(i);
 			String str = user.myMethod();
 			if (i % 1000 == 0) {
-				System.out.println(str);
+				//System.out.println(str);
 				users.add(user);
 			}
 			if (i % 10_000 == 0) {
-				System.out.println("index : " + i);
+				//System.out.println("index : " + i);
 			}
 		}
 		try {
