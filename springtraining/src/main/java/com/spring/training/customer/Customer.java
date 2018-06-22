@@ -45,4 +45,12 @@ public class Customer {
 		this.surname = surname;
 	}
 
+	public UserCredential getUserCredential() {
+		return this.userCredential;
+	}
+
+	public void setUserCredential(final UserCredential userCredential) {
+		this.userCredential = userCredential;
+	}
+
 }

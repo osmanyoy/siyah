@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.util.concurrent.ListenableFuture;
 
 public class MyAsyncBean {
-	
+
 	@Async
 	public Future<String> testAsync() {
 		try {
@@ -16,7 +16,7 @@ public class MyAsyncBean {
 		}
 		return AsyncResult.forValue("test result");
 	}
-	
+
 	@Async
 	public ListenableFuture<String> testAsync2() {
 		try {
@@ -25,5 +25,5 @@ public class MyAsyncBean {
 		}
 		return AsyncResult.forValue("test result");
 	}
-	
+
 }

@@ -8,28 +8,24 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
-import junit.framework.Test;
-
 @Configuration
 @EnableAsync
 @EnableScheduling
 public class ConcConfig {
-	
+
 	Logger logger = LoggerFactory.getLogger(ConcConfig.class);
 
 	@Bean
 	public MyAsyncBean asyncBean() {
 		return new MyAsyncBean();
 	}
-	
-	
-	
-	@Scheduled(fixedRate =2_000)
+
+	@Scheduled(fixedRate = 2_000)
 	public void scheduleTest() {
 		try {
 			Thread.sleep(3_000);
 		} catch (Exception e) {
 		}
-		logger.info("Test schedule");
+		this.logger.info("Test schedule");
 	}
 }

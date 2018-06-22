@@ -73,4 +73,12 @@ public class UserCredential {
 		this.roles = roles;
 	}
 
+	public Customer getCustomer() {
+		return this.customer;
+	}
+
+	public void setCustomer(final Customer customer) {
+		this.customer = customer;
+	}
+
 }

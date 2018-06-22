@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,12 @@ public class UserRest {
 	@Autowired
 	private RoleDAO rDAO;
 
-	@GetMapping("/add")
+	@GetMapping("/hello")
+	public String ttest() {
+		return "OK";
+	}
+
+	@PostMapping("/add")
 	public String addUser(@Valid final UserCredential user) {
 		List<Role> roles = user.getRoles();
 		List<Role> newRoles = new ArrayList<>();
@@ -34,6 +40,8 @@ public class UserRest {
 			}
 		}
 		user.setRoles(newRoles);
+		user.getCustomer()
+		    .setUserCredential(user);
 		this.ucDAO.save(user);
 		return "OK";
 	}
