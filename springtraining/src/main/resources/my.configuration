@@ -1,0 +1,23 @@
+osman.test=osman
+my.server.port=10000
+my.interface.impl=2
+
+my.turkcell.project=proj_turkcell_1
+my.turkcell.port=1999
+my.turkcell.arr[0] = osman1
+my.turkcell.arr[1] = osman2
+my.turkcell.arr[2] = osman3
+
+my.turkcell.arrList[0] = osmanList1
+my.turkcell.arrList[1] = osmanList2
+my.turkcell.arrList[2] = osmanList3
+
+my.turkcell.typeMap.type1=10
+my.turkcell.typeMap.type2=11
+my.turkcell.typeMap.type3=12
+my.turkcell.typeMap.type4=13
+
+my.turkcell.myExtraProp.extra1=txt1
+my.turkcell.myExtraProp.extra2=txt2
+
+com.conditional.test.type=1
